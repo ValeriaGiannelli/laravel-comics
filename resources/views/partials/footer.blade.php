@@ -6,7 +6,43 @@
         <div class="single-element" key="index">
             <!-- icona del link -->
             <div class="imgagine">
-                <img src="" alt="page.title">
+                <img src="{{Vite::asset('resources/img/buy-comics-digital-comics.png')}}" alt="page.title">
+            </div>
+
+            <!-- link -->
+            <a href="#">Digital comics</a>
+        </div>
+        <div class="single-element" key="index">
+            <!-- icona del link -->
+            <div class="imgagine">
+                <img src="{{Vite::asset('resources/img/buy-comics-digital-comics.png')}}" alt="page.title">
+            </div>
+
+            <!-- link -->
+            <a href="#">Digital comics</a>
+        </div>
+        <div class="single-element" key="index">
+            <!-- icona del link -->
+            <div class="imgagine">
+                <img src="{{Vite::asset('resources/img/buy-comics-digital-comics.png')}}" alt="page.title">
+            </div>
+
+            <!-- link -->
+            <a href="#">Digital comics</a>
+        </div>
+        <div class="single-element" key="index">
+            <!-- icona del link -->
+            <div class="imgagine">
+                <img src="{{Vite::asset('resources/img/buy-comics-digital-comics.png')}}" alt="page.title">
+            </div>
+
+            <!-- link -->
+            <a href="#">Digital comics</a>
+        </div>
+        <div class="single-element" key="index">
+            <!-- icona del link -->
+            <div class="imgagine">
+                <img src="{{Vite::asset('resources/img/buy-comics-digital-comics.png')}}" alt="page.title">
             </div>
 
             <!-- link -->
@@ -39,6 +75,24 @@
                     <li >
                         <a href="link.url">Characters</a>
                     </li>
+                    <li >
+                        <a href="link.url">Characters</a>
+                    </li>
+                    <li >
+                        <a href="link.url">Characters</a>
+                    </li>
+                    <li >
+                        <a href="link.url">Characters</a>
+                    </li>
+                    <li >
+                        <a href="link.url">Characters</a>
+                    </li>
+                    <li >
+                        <a href="link.url">Characters</a>
+                    </li>
+                    <li >
+                        <a href="link.url">Characters</a>
+                    </li>
 
 
                     <!-- titolo -->
@@ -47,6 +101,9 @@
                     </li>
 
                     <!-- link -->
+                    <li>
+                        <a href="link.url">Shop DC</a>
+                    </li>
                     <li>
                         <a href="link.url">Shop DC</a>
                     </li>
@@ -66,6 +123,36 @@
                     <li>
                         <a href="link.url">Terms of use</a>
                     </li>
+                    <li>
+                        <a href="link.url">Terms of use</a>
+                    </li>
+                    <li>
+                        <a href="link.url">Terms of use</a>
+                    </li>
+                    <li>
+                        <a href="link.url">Terms of use</a>
+                    </li>
+                    <li>
+                        <a href="link.url">Terms of use</a>
+                    </li>
+                    <li>
+                        <a href="link.url">Terms of use</a>
+                    </li>
+                    <li>
+                        <a href="link.url">Terms of use</a>
+                    </li>
+                    <li>
+                        <a href="link.url">Terms of use</a>
+                    </li>
+                    <li>
+                        <a href="link.url">Terms of use</a>
+                    </li>
+                    <li>
+                        <a href="link.url">Terms of use</a>
+                    </li>
+                    <li>
+                        <a href="link.url">Terms of use</a>
+                    </li>
 
                 </ul>
             </div>
@@ -79,6 +166,18 @@
                     </li>
 
                     <!-- link -->
+                    <li>
+                        <a href="link.url">DC</a>
+                    </li>
+                    <li>
+                        <a href="link.url">DC</a>
+                    </li>
+                    <li>
+                        <a href="link.url">DC</a>
+                    </li>
+                    <li>
+                        <a href="link.url">DC</a>
+                    </li>
                     <li>
                         <a href="link.url">DC</a>
                     </li>
