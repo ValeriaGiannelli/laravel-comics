@@ -10,34 +10,34 @@
         <nav>
             <ul>
                 <li>
-                    <a href="link.url" >CHARACTERS</a>
+                    <a href="{{route('characters')}}" >CHARACTERS</a>
                 </li>
                 <li>
-                    <a href="link.url" class="active">COMICS</a>
+                    <a href="{{route('comics')}}" class="active">COMICS</a>
                 </li>
                 <li>
-                    <a href="link.url" >MOVIES</a>
+                    <a href="{{route('movies')}}" >MOVIES</a>
                 </li>
                 <li>
-                    <a href="link.url" >TV</a>
+                    <a href="#" >TV</a>
                 </li>
                 <li>
-                    <a href="link.url">GAMES</a>
+                    <a href="#">GAMES</a>
                 </li>
                 <li>
-                    <a href="link.url" >COLLECTIBLES</a>
+                    <a href="#" >COLLECTIBLES</a>
                 </li>
                 <li>
-                    <a href="link.url" >VIDEOS</a>
+                    <a href="#" >VIDEOS</a>
                 </li>
                 <li>
-                    <a href="link.url" >FANS</a>
+                    <a href="#" >FANS</a>
                 </li>
                 <li>
-                    <a href="link.url" >NEWS</a>
+                    <a href="#" >NEWS</a>
                 </li>
                 <li>
-                    <a href="link.url" >SHOP</a>
+                    <a href="#" >SHOP</a>
                 </li>
             </ul>
         </nav>

@@ -137,5 +137,5 @@
 
 
 @section('titlePage')
-    home
+    comics
 @endsection
