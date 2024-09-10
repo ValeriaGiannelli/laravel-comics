@@ -1,4 +1,5 @@
 @php
+    $merchandises=config('merchandises.pages');
     $menu_dc_comics=config('menu_list.dc_comics');
     $menu_shop=config('menu_list.shop');
     $menu_dc=config('menu_list.dc');
@@ -10,55 +11,18 @@
  <div class="up">
 
     <div class="container">
+        @foreach ( $merchandises as $item )
+            <div class="single-element">
+                <!-- icona del link -->
+                <div class="imgagine">
+                    <img src="{{Vite::asset($item['path'])}}" alt="{{$item['title']}}">
+                </div>
 
-        <div class="single-element" key="index">
-            <!-- icona del link -->
-            <div class="imgagine">
-                <img src="{{Vite::asset('resources/img/buy-comics-digital-comics.png')}}" alt="page.title">
+                <!-- link -->
+                <a href="#">{{$item['title']}}</a>
             </div>
 
-            <!-- link -->
-            <a href="#">Digital comics</a>
-        </div>
-        <div class="single-element" key="index">
-            <!-- icona del link -->
-            <div class="imgagine">
-                <img src="{{Vite::asset('resources/img/buy-comics-digital-comics.png')}}" alt="page.title">
-            </div>
-
-            <!-- link -->
-            <a href="#">Digital comics</a>
-        </div>
-        <div class="single-element" key="index">
-            <!-- icona del link -->
-            <div class="imgagine">
-                <img src="{{Vite::asset('resources/img/buy-comics-digital-comics.png')}}" alt="page.title">
-            </div>
-
-            <!-- link -->
-            <a href="#">Digital comics</a>
-        </div>
-        <div class="single-element" key="index">
-            <!-- icona del link -->
-            <div class="imgagine">
-                <img src="{{Vite::asset('resources/img/buy-comics-digital-comics.png')}}" alt="page.title">
-            </div>
-
-            <!-- link -->
-            <a href="#">Digital comics</a>
-        </div>
-        <div class="single-element" key="index">
-            <!-- icona del link -->
-            <div class="imgagine">
-                <img src="{{Vite::asset('resources/img/buy-comics-digital-comics.png')}}" alt="page.title">
-            </div>
-
-            <!-- link -->
-            <a href="#">Digital comics</a>
-        </div>
-
-
-
+        @endforeach
     </div>
 
 </div>
