@@ -2,18 +2,136 @@
 @extends('layouts.main')
 
 @section('hero')
-    <div>HERO HOME</div>
+    <!-- sezione del jumbutron -->
+    <div class="jumbutron">
+        <img src="{{Vite::asset('resources/img/jumbotron.jpg')}}" alt="">
+
+        <div class="info container">
+            <h3>CURRENT SERIES</h3>
+        </div>
+
+    </div>
 @endsection
 
 @section('content')
 
-<div class="container my-5">
-    <h1>{{ $title }}</h1>
-    <img src="{{ Vite::asset('resources/img/colibri.jpg') }}" alt="" class="img-fluid">
-    <p>
-        {{ $text }}
-    </p>
-</div>
+    <section class="contenuti">
+        <!-- contenitore all'80% -->
+        <div class="container">
+            <!-- card con immagine fumetto e titolo -->
+            <div class="card">
+                <!-- immagine che andrà gestita con props -->
+                <div>
+                    <img src="https://www.coverbrowser.com/image/action-comics/1-1.jpg" alt="singleComic.series">
+                </div>
+                <!-- titolo del fumetto gestito con props -->
+                <h5>ACTION COMICS</h5>
+            </div>
+            <!-- card con immagine fumetto e titolo -->
+            <div class="card">
+                <!-- immagine che andrà gestita con props -->
+                <div>
+                    <img src="https://www.coverbrowser.com/image/action-comics/1-1.jpg" alt="singleComic.series">
+                </div>
+                <!-- titolo del fumetto gestito con props -->
+                <h5>ACTION COMICS</h5>
+            </div>
+            <!-- card con immagine fumetto e titolo -->
+            <div class="card">
+                <!-- immagine che andrà gestita con props -->
+                <div>
+                    <img src="https://www.coverbrowser.com/image/action-comics/1-1.jpg" alt="singleComic.series">
+                </div>
+                <!-- titolo del fumetto gestito con props -->
+                <h5>ACTION COMICS</h5>
+            </div>
+            <!-- card con immagine fumetto e titolo -->
+            <div class="card">
+                <!-- immagine che andrà gestita con props -->
+                <div>
+                    <img src="https://www.coverbrowser.com/image/action-comics/1-1.jpg" alt="singleComic.series">
+                </div>
+                <!-- titolo del fumetto gestito con props -->
+                <h5>ACTION COMICS</h5>
+            </div>
+            <!-- card con immagine fumetto e titolo -->
+            <div class="card">
+                <!-- immagine che andrà gestita con props -->
+                <div>
+                    <img src="https://www.coverbrowser.com/image/action-comics/1-1.jpg" alt="singleComic.series">
+                </div>
+                <!-- titolo del fumetto gestito con props -->
+                <h5>ACTION COMICS</h5>
+            </div>
+            <!-- card con immagine fumetto e titolo -->
+            <div class="card">
+                <!-- immagine che andrà gestita con props -->
+                <div>
+                    <img src="https://www.coverbrowser.com/image/action-comics/1-1.jpg" alt="singleComic.series">
+                </div>
+                <!-- titolo del fumetto gestito con props -->
+                <h5>ACTION COMICS</h5>
+            </div>
+            <!-- card con immagine fumetto e titolo -->
+            <div class="card">
+                <!-- immagine che andrà gestita con props -->
+                <div>
+                    <img src="https://www.coverbrowser.com/image/action-comics/1-1.jpg" alt="singleComic.series">
+                </div>
+                <!-- titolo del fumetto gestito con props -->
+                <h5>ACTION COMICS</h5>
+            </div>
+            <!-- card con immagine fumetto e titolo -->
+            <div class="card">
+                <!-- immagine che andrà gestita con props -->
+                <div>
+                    <img src="https://www.coverbrowser.com/image/action-comics/1-1.jpg" alt="singleComic.series">
+                </div>
+                <!-- titolo del fumetto gestito con props -->
+                <h5>ACTION COMICS</h5>
+            </div>
+            <!-- card con immagine fumetto e titolo -->
+            <div class="card">
+                <!-- immagine che andrà gestita con props -->
+                <div>
+                    <img src="https://www.coverbrowser.com/image/action-comics/1-1.jpg" alt="singleComic.series">
+                </div>
+                <!-- titolo del fumetto gestito con props -->
+                <h5>ACTION COMICS</h5>
+            </div>
+            <!-- card con immagine fumetto e titolo -->
+            <div class="card">
+                <!-- immagine che andrà gestita con props -->
+                <div>
+                    <img src="https://www.coverbrowser.com/image/action-comics/1-1.jpg" alt="singleComic.series">
+                </div>
+                <!-- titolo del fumetto gestito con props -->
+                <h5>ACTION COMICS</h5>
+            </div>
+            <!-- card con immagine fumetto e titolo -->
+            <div class="card">
+                <!-- immagine che andrà gestita con props -->
+                <div>
+                    <img src="https://www.coverbrowser.com/image/action-comics/1-1.jpg" alt="singleComic.series">
+                </div>
+                <!-- titolo del fumetto gestito con props -->
+                <h5>ACTION COMICS</h5>
+            </div>
+            <!-- card con immagine fumetto e titolo -->
+            <div class="card">
+                <!-- immagine che andrà gestita con props -->
+                <div>
+                    <img src="https://www.coverbrowser.com/image/action-comics/1-1.jpg" alt="singleComic.series">
+                </div>
+                <!-- titolo del fumetto gestito con props -->
+                <h5>ACTION COMICS</h5>
+            </div>
+        </div>
+    </section>
+
+    <div class="contenuti more">
+        <button>LOAD MORE</button>
+    </div>
 
 @endsection
 

@@ -1,0 +1,69 @@
+@use './variables';
+
+// jumbutron
+.jumbutron{
+    height: 400px;
+    position: relative;
+
+    img{
+        height: 100%;
+        object-fit: cover;
+        object-position: top;
+    }
+
+    .info h3{
+        color: $primary-text-color;
+        padding: 10px 20px;
+        background-color: $primary;
+        position: absolute;
+    }
+}
+
+// dimensioni totali card
+.card{
+    width: 200px;
+    height: 250px;
+
+    // dimensioni per il contenitore dell'immagine
+    div{
+        height: 200px;
+
+        // caratteristiche dell'immagine
+        img{
+        height: 100%;
+        object-fit: cover;
+        object-position: top;
+    }
+    }
+    h5{
+        margin-top: 20px;
+        text-transform: uppercase;
+    }
+
+}
+
+// main
+.contenuti{
+    background-color: #1c1c1c;
+    display: flex;
+    align-items: center;
+    padding-top: 60px;
+
+    // aggiunto un wrap alla condizione iniziale
+    .container{
+        flex-wrap: wrap;
+        gap:30px;
+    }
+}
+
+.more{
+    justify-content: center;
+    // caratteristiche del bottone
+    button{
+        background: $primary;
+        padding: 10px 50px;
+        color: $primary-text-color;
+        border-color: $primary;
+        margin-bottom: 20px;
+    }
+}
