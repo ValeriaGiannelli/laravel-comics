@@ -1,3 +1,11 @@
+@php
+    $menu_dc_comics=config('menu_list.dc_comics');
+    $menu_shop=config('menu_list.shop');
+    $menu_dc=config('menu_list.dc');
+    $menu_sites=config('menu_list.sites');
+@endphp
+
+
  <!-- parte alta del merchandise -->
  <div class="up">
 
@@ -71,29 +79,12 @@
                         DC COMICS
                     </li>
 
-                    <!-- link -->
-                    <li >
-                        <a href="link.url">Characters</a>
-                    </li>
-                    <li >
-                        <a href="link.url">Characters</a>
-                    </li>
-                    <li >
-                        <a href="link.url">Characters</a>
-                    </li>
-                    <li >
-                        <a href="link.url">Characters</a>
-                    </li>
-                    <li >
-                        <a href="link.url">Characters</a>
-                    </li>
-                    <li >
-                        <a href="link.url">Characters</a>
-                    </li>
-                    <li >
-                        <a href="link.url">Characters</a>
-                    </li>
-
+                    {{-- link --}}
+                    @foreach ( $menu_dc_comics as $link )
+                        <li >
+                            <a href="#">{{$link['text']}}</a>
+                        </li>
+                    @endforeach
 
                     <!-- titolo -->
                     <li class="title">
@@ -101,12 +92,11 @@
                     </li>
 
                     <!-- link -->
-                    <li>
-                        <a href="link.url">Shop DC</a>
-                    </li>
-                    <li>
-                        <a href="link.url">Shop DC</a>
-                    </li>
+                    @foreach ($menu_shop as $link )
+                        <li>
+                            <a href="#">{{$link['text']}}</a>
+                        </li>
+                    @endforeach
 
                 </ul>
             </div>
@@ -120,39 +110,11 @@
                     </li>
 
                     <!-- link -->
+                    @foreach ($menu_dc as $link )
                     <li>
-                        <a href="link.url">Terms of use</a>
+                        <a href="#">{{$link['text']}}</a>
                     </li>
-                    <li>
-                        <a href="link.url">Terms of use</a>
-                    </li>
-                    <li>
-                        <a href="link.url">Terms of use</a>
-                    </li>
-                    <li>
-                        <a href="link.url">Terms of use</a>
-                    </li>
-                    <li>
-                        <a href="link.url">Terms of use</a>
-                    </li>
-                    <li>
-                        <a href="link.url">Terms of use</a>
-                    </li>
-                    <li>
-                        <a href="link.url">Terms of use</a>
-                    </li>
-                    <li>
-                        <a href="link.url">Terms of use</a>
-                    </li>
-                    <li>
-                        <a href="link.url">Terms of use</a>
-                    </li>
-                    <li>
-                        <a href="link.url">Terms of use</a>
-                    </li>
-                    <li>
-                        <a href="link.url">Terms of use</a>
-                    </li>
+                    @endforeach
 
                 </ul>
             </div>
@@ -166,21 +128,11 @@
                     </li>
 
                     <!-- link -->
-                    <li>
-                        <a href="link.url">DC</a>
-                    </li>
-                    <li>
-                        <a href="link.url">DC</a>
-                    </li>
-                    <li>
-                        <a href="link.url">DC</a>
-                    </li>
-                    <li>
-                        <a href="link.url">DC</a>
-                    </li>
-                    <li>
-                        <a href="link.url">DC</a>
-                    </li>
+                    @foreach ($menu_sites as $link )
+                        <li>
+                            <a href="#">{{$link['text']}}</a>
+                        </li>
+                    @endforeach
 
                 </ul>
             </div>
