@@ -1,0 +1,110 @@
+@use './mixins';
+@use './variables';
+
+//  parte alta
+   .up{
+       background-color: $primary;
+       display: flex;
+       align-items: center;
+       min-height: 150px;
+   }
+
+   .container{
+       justify-content: space-around
+   }
+
+   .single-element{
+      @include flex-center;
+   }
+
+   .imgagine{
+       width: 50px;
+       height: 50px;
+
+       img{
+           height: 100%;
+           object-fit: contain;
+       }
+   }
+
+   a{
+       color: white;
+       padding-left: 10px;
+   }
+
+// link utili
+   .link-utili{
+       background-image: url("../../resources/img/dc-logo-bg.png"), url("../../resources/img/footer-bg.jpg");
+       background-size: 30%, cover;
+       background-position-x: 80%;
+       background-position-y: center;
+       background-repeat: no-repeat;
+
+       .container{
+           justify-content: space-between;
+       }
+
+       li{
+           padding: 3px 0;
+       }
+
+       a{
+           padding: 0;
+           color: gray;
+       }
+
+       // titolo della colonna dei link
+       .title{
+           color: $primary-text-color;
+           padding: 10px 0;
+       }
+   }
+
+
+   .links{
+       display: flex;
+   }
+
+   .col-link{
+       min-width: 140px;
+       padding-right:30px;
+   }
+
+// logo
+   .log-bg{
+       height: 400px;
+       img{
+           height: 100%;
+       }
+   }
+
+// sing-up e follow us
+   .down{
+       background-color: #2f2f2f;
+       min-height: 150px;
+       @include flex-center;
+
+       .container{
+           justify-content: space-between;
+
+           button{
+               color: white;
+               font-size: 20px;
+               padding: 15px;
+               border: 2px solid $primary;
+               background-color: $bg-footer-color;
+           }
+       }
+   }
+
+   .follow{
+       @include flex-center;
+
+       span{
+           color: $primary;
+       }
+
+       i{
+           color: #787878;
+       }
+   }

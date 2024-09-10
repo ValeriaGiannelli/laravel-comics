@@ -1,0 +1,36 @@
+
+@use './variables';
+
+.container{
+    justify-content: space-between;
+    min-height: 120px;
+
+    .logo{
+        max-width: 80px;
+    }
+
+    ul{
+        display: flex;
+        gap: 10px;
+        font-size: 12px;
+
+        li{
+            height: 120px;
+            display: flex;
+            align-items: center;
+        }
+
+        a{
+            color: black;
+            min-height: 120px;
+            display: flex;
+            align-items: center;
+            border-bottom: 5px solid $primary-text-color;
+
+            &.active{
+            color: #0f82f7;
+            border-bottom-color: $primary;
+}
+        }
+    }
+}

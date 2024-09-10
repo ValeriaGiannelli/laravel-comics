@@ -1,0 +1,5 @@
+// display flex con align center
+@mixin flex-center(){
+    display: flex;
+    align-items: center;
+}
