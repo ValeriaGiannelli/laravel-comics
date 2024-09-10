@@ -1,3 +1,7 @@
+@php
+    $menu_principale=config('menu_list.main_menu');
+@endphp
+
 <header>
 
     <div class="container_header">
@@ -9,38 +13,11 @@
         <!-- menu navigazione -->
         <nav>
             <ul>
-
-                <li>
-
-                    <a class="{{Route::currentRouteName() === 'characters' ? 'active' : ''}}" href="{{route('characters')}}" >CHARACTERS</a>
-                </li>
-                <li>
-                    <a class="{{Route::currentRouteName() === 'comics' ? 'active' : ''}}" href="{{route('comics')}}">COMICS</a>
-                </li>
-                <li>
-                    <a class="{{Route::currentRouteName() === 'movies' ? 'active' : ''}}" href="{{route('movies')}}" >MOVIES</a>
-                </li>
-                <li>
-                    <a href="#" >TV</a>
-                </li>
-                <li>
-                    <a href="#">GAMES</a>
-                </li>
-                <li>
-                    <a href="#" >COLLECTIBLES</a>
-                </li>
-                <li>
-                    <a href="#" >VIDEOS</a>
-                </li>
-                <li>
-                    <a href="#" >FANS</a>
-                </li>
-                <li>
-                    <a href="#" >NEWS</a>
-                </li>
-                <li>
-                    <a href="#" >SHOP</a>
-                </li>
+                @foreach ( $menu_principale as $item )
+                    <li>
+                        <a class="{{Route::currentRouteName() === $item['name'] ? 'active' : ''}}" href="{{route($item['name'])}}" >{{$item['text']}}</a>
+                    </li>
+                @endforeach
             </ul>
         </nav>
     </div>
